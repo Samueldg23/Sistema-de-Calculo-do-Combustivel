@@ -23,6 +23,7 @@ No palio é informado o combústivel através de traços no painel, o tanque cab
 
 # Próximos Passos
 - Definir entidades e responsabilidades
+  ![Diagrama de Entidade-Relacionamento](https://github.com/user-attachments/assets/1221ecc0-d411-48cc-a658-b1fa0e1ad00e)
 - Definir relacionamentos JPA
 - Definir fluxo de uso
 - Criar uma versão mínima funcional
