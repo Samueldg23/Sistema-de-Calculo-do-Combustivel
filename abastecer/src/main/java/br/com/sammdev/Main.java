@@ -13,6 +13,10 @@ import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
 
+//essa classe eu fiz mais ou menos um esboço usando os códigos que tenho da faculdade
+//não conseguir criar ela sozinho, depois pedi pro gpt ajustar o código para não dar erro
+//ele ajustou algumas partes, principalmente a parte de EntityManager e EntityManagerFactory que ainda não entendi direito como funciona
+//o código tá funcional e sem erro até agora, mas falta formatar como os dados vem no terminal
 public class Main {
     public static void main(String[] args) {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("controle-consumo-pu");
