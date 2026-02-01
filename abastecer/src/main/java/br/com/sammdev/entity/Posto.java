@@ -11,7 +11,6 @@ public class Posto {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String nome;
-    private Abastecimento abastecimento;
 
     public Posto(String nome) {
         this.nome = nome;
@@ -31,11 +30,5 @@ public class Posto {
     }
     public void setNome(String nome) {
         this.nome = nome;
-    }
-    public Abastecimento getAbastecimento() {
-        return abastecimento;
-    }
-    public void setAbastecimento(Abastecimento abastecimento) {
-        this.abastecimento = abastecimento;
     }
 }

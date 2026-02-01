@@ -10,7 +10,7 @@ public interface AbastecimentoRepository {
 
     Abastecimento buscarPorId(Long id);
 
-    Abastecimento buscarUltimoAbastecimento(Palio palio);
+    Abastecimento buscarUltimoAbastecimentoRegistrado(Palio palio);
 
     // abastecimento que não teve erro no registro ou meu pai abasteceu sem eu saber
     Abastecimento buscarUltimoAbastecimentoValido(Palio palio);

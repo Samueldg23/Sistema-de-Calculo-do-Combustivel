@@ -14,19 +14,30 @@ public class Abastecimento {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     private LocalDateTime dataHora;
+
     @ManyToOne
     @JoinColumn(name = "posto_id", nullable = false)
     private Posto posto;
+
     @ManyToOne
     @JoinColumn(name = "palio_id", nullable = false)
     private Palio palio;
+
     private Double precoLitro;
     private Double litrosAbastecidos;
     private Double valorTotal;
+    // Dados do palio, no abastecimento
     private int kmNoMomento;
     private Double tracosNoMomento;
     private Double consumoPainelMomento;
+
+    //Caso de falhas no abastecimneto, ideia do chat
+    private boolean participaCalculo = true;
+    private boolean marcaReinicio = false;
+
+    private String observacao;
 
     protected Abastecimento() {
     }
@@ -121,5 +132,29 @@ public class Abastecimento {
 
     public void setConsumoPainelMomento(Double consumoPainelMomento) {
         this.consumoPainelMomento = consumoPainelMomento;
+    }
+
+    public boolean isParticipaCalculo() {
+        return participaCalculo;
+    }
+
+    public void setParticipaCalculo(boolean participaCalculo) {
+        this.participaCalculo = participaCalculo;
+    }
+
+    public String getObservacao() {
+        return observacao;
+    }
+
+    public void setObservacao(String observacao) {
+        this.observacao = observacao;
+    }
+
+    public boolean isMarcaReinicio() {
+        return marcaReinicio;
+    }
+
+    public void setMarcaReinicio(boolean marcaReinicio) {
+        this.marcaReinicio = marcaReinicio;
     }
 }

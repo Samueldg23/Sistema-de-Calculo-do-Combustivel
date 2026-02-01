@@ -10,30 +10,28 @@ public class Palio {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private int capacidadeTanqueLitros;
-    private int totalTracos;
+    // Conversa com o chat ele me disse que não é usual deixar as constantes como atributos
+    //private int capacidadeTanqueLitros;
+    //private int totalTracos;
     private int kmAtual;
     private Double tracosAtuais;
-    private Double consumoPainel;
+    private Double consumoPainelAtual;
     
     protected Palio() {
     }
 
-    public Palio(int kmAtual, Double tracosAtuais, Double consumoPainel) {
-        this.capacidadeTanqueLitros = 48;
-        this.totalTracos = 16;
+    public Palio(int kmAtual, Double tracosAtuais, Double consumoPainelAtual) {
+        //this.capacidadeTanqueLitros = 48;
+        //this.totalTracos = 16;
         this.kmAtual = kmAtual;
         this.tracosAtuais = tracosAtuais;
-        this.consumoPainel = consumoPainel;
+        this.consumoPainelAtual = consumoPainelAtual;
     }
 
     public Long getId() {
         return id;
     }
-    public void setId(Long id) {
-        this.id = id;
-    }
-    public int getCapacidadeTanqueLitros() {
+    /*public int getCapacidadeTanqueLitros() {
         return capacidadeTanqueLitros;
     }
     public void setCapacidadeTanqueLitros(int capacidadeTanqueLitros) {
@@ -44,7 +42,7 @@ public class Palio {
     }
     public void setTotalTracos(int totalTracos) {
         this.totalTracos = totalTracos;
-    }
+    }*/
     public int getKmAtual() {
         return kmAtual;
     }
@@ -57,10 +55,10 @@ public class Palio {
     public void setTracosAtuais(Double tracosAtuais) {
         this.tracosAtuais = tracosAtuais;
     }
-    public Double getConsumoPainel() {
-        return consumoPainel;
+    public Double getConsumoPainelAtual() {
+        return consumoPainelAtual;
     }
-    public void setConsumoPainel(Double consumoPainel) {
-        this.consumoPainel = consumoPainel;
+    public void setConsumoPainelAtual(Double consumoPainelAtual) {
+        this.consumoPainelAtual = consumoPainelAtual;
     }
 }

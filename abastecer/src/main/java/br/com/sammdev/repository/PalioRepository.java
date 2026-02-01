@@ -8,6 +8,4 @@ public interface PalioRepository {
     Palio buscarPorId(Long id);
 
     Palio buscarEstadoAtual();
-
-    void atualizarEstadoAtual(Palio palio);
 }
